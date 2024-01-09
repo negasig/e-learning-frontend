@@ -37,5 +37,14 @@ public class Controller {
 		return trepo.save(tch);
 		
 	}
-		
+	@GetMapping("/login")
+	public String login() {
+		return "login page";
+
+	}
+	@GetMapping("/protectedroute")
+	public Object protectedroute(@RequestBody Student st) {
+		return stdrepo.save(st);
+
+	}
 }
