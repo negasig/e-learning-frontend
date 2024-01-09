@@ -7,7 +7,7 @@ import Courses from './pages/courses';
 import Department from './pages/department';
 import Student from './pages/student';
 
-export function Layout() {
+export default function Layout() {
   return (
   <div className='ng-cls'>
     <BrowserRouter>
