@@ -19,7 +19,7 @@ function App() {
       <Route path="/student" element={<Student />}/>
       <Route path="/department" element={<Department />}/>
       <Route path="/course" element={<Courses />}/>
-      <Route path="/academicyear" element={<Academicyear />}/>
+      <Route path="/academic" element={<Academicyear />}/>
     </Routes>
     
     </BrowserRouter>       
