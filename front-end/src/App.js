@@ -14,12 +14,12 @@ function App() {
   return (
 <BrowserRouter>
     <Routes>
-      <Route path='/' element={<Layout />}/>
-      <Route index element={<Dashboard />}/>
+      <Route index element={<Layout />}/>
       <Route path="/student" element={<Student />}/>
       <Route path="/department" element={<Department />}/>
       <Route path="/course" element={<Courses />}/>
       <Route path="/academic" element={<Academicyear />}/>
+      <Route path="/dashboard" element={<Dashboard />}/>
     </Routes>
     
     </BrowserRouter>       
