@@ -7,6 +7,7 @@ import Courses from './pages/courses';
 import Department from './pages/department';
 import Student from './pages/student';
 import Layout from './pages/Layout';
+import Maths from './pages/Maths';
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <Route path="/course" element={<Courses />}/>
       <Route path="/academic" element={<Academicyear />}/>
       <Route path="/dashboard" element={<Dashboard />}/>
+      <Route path="/Maths" element={<Maths />}/>
     </Routes>
     
     </BrowserRouter>       
