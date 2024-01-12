@@ -46,3 +46,14 @@ p{
   width: 50%;
   text-align: left;
 }
+img{
+  height: 6%;
+  margin-top: -6%;
+  width: 15%;
+  margin-left: -50%;
+}
+.login{
+  width: 20%;
+  text-align: center;
+  margin-left: 36%;
+}
