@@ -38,5 +38,10 @@ div{
 .ng a:hover{
 background-color: #ddd;
 color: black;
-width: 20%;
+width: 10%;
+}
+p{
+  margin-left: 15%;
+  width: 50%;
+  text-align: left;
 }
