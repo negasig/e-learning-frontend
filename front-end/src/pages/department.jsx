@@ -1,7 +1,18 @@
 import React from 'react'
-
+import '../App.css'
+import { Link } from 'react-router-dom'
 export default function Department() {
   return (
-    <div>department</div>
+    <>
+    <h1>E-Learning</h1>
+    <div>Departments</div>
+    <div className='ng'>
+    <Link to='/dashboard'>Dashboard</Link>
+    <Link to='/student'>Students</Link>
+    <Link to='/course'>Courses</Link>
+    <Link to='/department'>Departments</Link>
+    <Link to='/academic'>Academic year</Link>
+    </div>
+   </>
   )
 }

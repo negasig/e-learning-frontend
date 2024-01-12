@@ -1,26 +1,31 @@
-
+import React from 'react'
 import './App.css';
-import {Link} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Academicyear from './pages/Academicyear';
+import Dashboard from './pages/Dashboard';
+import Courses from './pages/courses';
+import Department from './pages/department';
+import Student from './pages/student';
+import Layout from './pages/Layout';
+import Maths from './pages/Maths';
+
 
 
 function App() {
   return (
-   <>
-
-            <Link to="/">Dashboard</Link>
-
-            <Link to={"/student"}>Students</Link>
-       
-            <Link to={"/courses"}>Courses</Link>
-  
-            <Link to={"/Depsrtment"}>Depsrtment</Link>
+<BrowserRouter>
+    <Routes>
+      <Route index element={<Layout />}/>
+      <Route path="/student" element={<Student />}/>
+      <Route path="/department" element={<Department />}/>
+      <Route path="/course" element={<Courses />}/>
+      <Route path="/academic" element={<Academicyear />}/>
+      <Route path="/dashboard" element={<Dashboard />}/>
+      <Route path="/Maths" element={<Maths />}/>
+    </Routes>
     
-            <Link to={"/academicyear"}>Academic year</Link>
-
-  
-  
-  </>
-  );
+    </BrowserRouter>       
+  )
 
   }
 export default App;
