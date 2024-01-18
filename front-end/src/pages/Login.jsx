@@ -1,19 +1,24 @@
 import React from 'react'
-import imgb from '../images/imgfo.jpg'
-import Button from '@mui/material/Button';
+
+
 
 export default function Login() {
+  localStorage.setItem("name", "negasi");
+   console.log(localStorage.getItem("name"));
   return (
     <>
     <h1>E-Learning</h1>
     <div className='login'>
     <form>
     <h3>login</h3>
-    <Button variant='contained'>register</Button>
+    <label>username</label>
+    <input type='text' name='uname'/>
+    <label>password</label>
+    <input type='password' name='pass'/><br/>
+    <input type='submit'/>
  </form>
     </div>
- 
- <img src={imgb} alt='jffjf'/>
      </>
   )
+  
 }

@@ -11,6 +11,7 @@ export default function Layout() {
    <Link to='/course'>Courses</Link>
    <Link to='/department'>Departments</Link>
    <Link to='/academic'>Academic year</Link>
+   
    </div>
 
     </>
