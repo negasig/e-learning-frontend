@@ -33,6 +33,7 @@ export default function Student() {
               <th>department</th>
               <th>grade</th>
               <th>age</th>
+              <th>action</th>
             </thead>
             {
       students.map(std=>{
@@ -43,6 +44,7 @@ export default function Student() {
                 <td>{std.department}</td>
                 <td>{std.grade}</td>
                 <td>{std.age}</td>
+                <td><button>update</button><button>delete</button></td>
               </tr>
             </tbody>
       })}
