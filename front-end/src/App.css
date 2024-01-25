@@ -58,3 +58,21 @@ img{
   text-align: center;
   margin-left: 10%;
 }
+.listst{
+  margin-left: 20%;
+margin-top: 1px;
+
+}
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
