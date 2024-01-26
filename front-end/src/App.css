@@ -75,14 +75,14 @@ input{
 img{
   width: 70px;
   margin-left: -20%;
-  margin-top: 0.4%;
+  margin-top: 6%;
   position: absolute;
   height: 60x;
   border-radius: 20%;
   background-color: white;
 }
 .login{
-  margin-top: 1%;
+  margin-top: 0%;
   position: relative;
 }
 .logo img{
