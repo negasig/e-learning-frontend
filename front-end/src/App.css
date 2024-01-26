@@ -46,18 +46,7 @@ p{
   width: 50%;
   text-align: left;
 }
-img{
-  height: 10%;
-  margin-top: -10%;
-  width: 20%;
-  margin-left: -50%;
-  border-radius: 8px;
-}
-.login{
-  width: 40%;
-  text-align: center;
-  margin-left: 10%;
-}
+
 .listst{
   margin-left: 20%;
 margin-top: 1px;
@@ -75,4 +64,30 @@ table {
 
 th, td {
   padding: 15px;
+}
+input{
+  padding: 10px;
+  width: 26%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-width: 1px;
+}
+img{
+  width: 85px;
+  margin-left: -21%;
+  margin-top: 1%;
+  position: absolute;
+  height: 60x;
+  border-radius: 20%;
+}
+.login{
+  margin-top: 1%;
+  position: relative;
+}
+.logo img{
+
+  width: 150px;
+  margin-left: 10px;
+  margin-top: 1%;
+  position: relative;
 }
