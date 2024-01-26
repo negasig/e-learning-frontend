@@ -30,10 +30,10 @@ export default function Student() {
             <thead>
               <th>First Name</th>
               <th>Last Name</th>
-              <th>department</th>
-              <th>grade</th>
-              <th>age</th>
-              <th>action</th>
+              <th>Department</th>
+              <th>Drade</th>
+              <th>Age</th>
+              <th>Action</th>
             </thead>
             {
       students.map(std=>{
