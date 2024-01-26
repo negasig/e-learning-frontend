@@ -1,7 +1,7 @@
 
 import React from 'react'
-import ih from '../images/OIP.jpg'
-import kh from '../images/e-learning.jpg'
+import ih from '../images/ngim.jpeg'
+import kh from '../images/elear.jpg'
 import { Button } from '@mui/material';
 
 
@@ -21,7 +21,7 @@ export default function Login() {
         <form>
           <input type='text' name="username" placeholder='Enter username' required/><br/>
           <input type='password' name="password" placeholder='Enter password' required/><br/>
-          <Button type='submit' variant='contained'>Login</Button>
+          <Button type='submit' color='primary' variant='contained'>Login</Button>
         </form>
         </div>
 

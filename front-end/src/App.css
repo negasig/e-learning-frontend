@@ -73,12 +73,13 @@ input{
   border-width: 1px;
 }
 img{
-  width: 85px;
-  margin-left: -21%;
-  margin-top: 1%;
+  width: 70px;
+  margin-left: -20%;
+  margin-top: 0.4%;
   position: absolute;
   height: 60x;
   border-radius: 20%;
+  background-color: white;
 }
 .login{
   margin-top: 1%;
