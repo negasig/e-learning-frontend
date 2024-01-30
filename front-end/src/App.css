@@ -46,15 +46,49 @@ p{
   width: 50%;
   text-align: left;
 }
+
+.listst{
+  margin-left: 20%;
+margin-top: 1px;
+
+}
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+input{
+  padding: 10px;
+  width: 26%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-width: 1px;
+}
 img{
-  height: 10%;
-  margin-top: -10%;
-  width: 20%;
-  margin-left: -50%;
-  border-radius: 8px;
+  width: 70px;
+  margin-left: -20%;
+  margin-top: 6%;
+  position: absolute;
+  height: 60x;
+  border-radius: 20%;
+  background-color: white;
 }
 .login{
-  width: 40%;
-  text-align: center;
-  margin-left: 10%;
+  margin-top: 0%;
+  position: relative;
+}
+.logo img{
+
+  width: 150px;
+  margin-left: 10px;
+  margin-top: 1%;
+  position: relative;
 }

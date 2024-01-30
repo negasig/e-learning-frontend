@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,7 +15,7 @@ import com.elearning.elearning.Repository.StudentRepository;
 import com.elearning.elearning.Repository.TeacherRepo;
 import com.elearning.elearning.models.Student;
 import com.elearning.elearning.models.Teacher;
-
+@CrossOrigin(origins = "http://localhost:3000")
 @SpringBootApplication
 @RequestMapping("/Api/v1")
 @RestController
