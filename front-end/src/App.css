@@ -112,3 +112,7 @@ img{
   margin-top: 1%;
   position: relative;
 }
+a{
+  color: black;
+  background-color: white;
+}
