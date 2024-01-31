@@ -13,8 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.elearning.elearning.Repository.StudentRepository;
 import com.elearning.elearning.Repository.TeacherRepo;
+import com.elearning.elearning.Repository.UserRepository;
 import com.elearning.elearning.models.Student;
 import com.elearning.elearning.models.Teacher;
+import com.elearning.elearning.models.User;
 @CrossOrigin(origins = "http://localhost:3000")
 @SpringBootApplication
 @RequestMapping("/Api/v1")
@@ -24,6 +26,8 @@ public class Controller {
 	StudentRepository stdrepo;
 	@Autowired
 	TeacherRepo trepo;
+	@Autowired
+	UserRepository urepo;
 	@GetMapping("/students")
 	public List<Student> getAll() {
 		return stdrepo.findAll();
@@ -38,11 +42,21 @@ public class Controller {
 		return trepo.save(tch);
 		
 	}
-	@GetMapping("/login")
-	public String login() {
-		return "login page";
-
+	@PostMapping("/adduser")
+	public Object adduser(@RequestBody User user ){
+		return urepo.save(user);
+		
 	}
+	@PostMapping("/login")
+	public boolean login(@RequestBody User us  ) {
+	   if(us.getUsername().equals("negasi")) {
+		return true;
+	     }
+	   else {
+	   return false;   
+	}
+	}
+	@Secure("negasi")
 	@GetMapping("/protectedroute")
 	public Object protectedroute(@RequestBody Student st) {
 		return stdrepo.save(st);

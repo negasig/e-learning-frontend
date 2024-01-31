@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 import lombok.Data;
 @Entity
 @Table
-@Data
+
 public class Student {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Id

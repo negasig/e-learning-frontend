@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 export default function Dashboard() {
   return (
     <>
-
     <h1>E-Learning</h1>
       <div>Dashboard</div>
       <div className='ng'>

@@ -11,6 +11,8 @@ export default function Login() {
   const handleLogin=()=>{
 axios.post("http://localhost:9009/Api/v1/login", {username, password}).then(result=>{
 localStorage.setItem("token", result.data);
+console.log(localStorage.getItem("token"));
+
 })
   }
   return (
