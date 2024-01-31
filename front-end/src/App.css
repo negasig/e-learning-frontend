@@ -8,6 +8,26 @@
   }
 }
 
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -74,8 +94,8 @@ input{
 }
 img{
   width: 70px;
-  margin-left: -20%;
-  margin-top: 6%;
+  margin-left: -17%;
+  margin-top: 4%;
   position: absolute;
   height: 60x;
   border-radius: 20%;
@@ -91,4 +111,8 @@ img{
   margin-left: 10px;
   margin-top: 1%;
   position: relative;
+}
+a{
+  color: black;
+  background-color: white;
 }

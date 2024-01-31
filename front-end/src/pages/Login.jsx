@@ -4,7 +4,8 @@ import kh from '../images/elear.jpg'
 import { Button } from '@mui/material';
 import axios from 'axios';
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom/dist';
+import '../App.css'
 export default function Login() {
   const[username, setUsername]=useState();
   const[password, setPassword]=useState();
@@ -22,7 +23,7 @@ console.log(localStorage.getItem("token"));
     </div>
     <img src={ih} alt='igkdbc'/>
         <div className='login'>
-        <h3>E-learning</h3>
+        <h3>E-learning <Link to="/register">Register</Link></h3>
         <form onSubmit={handleLogin}>
           <input type='text' name="username" onChange={(e)=>setUsername(e.target.value)} 
           placeholder='Enter username' required/><br/>
