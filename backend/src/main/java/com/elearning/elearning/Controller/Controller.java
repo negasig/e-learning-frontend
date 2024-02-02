@@ -1,6 +1,7 @@
 package com.elearning.elearning.Controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -48,18 +49,16 @@ public class Controller {
 		
 	}
 	@PostMapping("/login")
-	public boolean login(@RequestBody User us  ) {
-	   if(us.getUsername().equals("negasi")) {
-		return true;
-	     }
-	   else {
-	   return false;   
+	public String login(@RequestBody User us  ) {
+
+
+		return us.getUsername();
 	}
-	}
-	@Secure("negasi")
+
 	@GetMapping("/protectedroute")
 	public Object protectedroute(@RequestBody Student st) {
 		return stdrepo.save(st);
+
 
 	}
 }
