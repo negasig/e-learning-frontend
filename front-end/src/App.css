@@ -93,9 +93,9 @@ input{
   border-width: 1px;
 }
 img{
-  width: 70px;
-  margin-left: -17%;
-  margin-top: 4%;
+  width: 60px;
+  margin-left: -19%;
+  margin-top: 5%;
   position: absolute;
   height: 60x;
   border-radius: 20%;
@@ -108,7 +108,7 @@ img{
 .logo img{
 
   width: 150px;
-  margin-left: 10px;
+  margin-left: 1%;
   margin-top: 1%;
   position: relative;
 }
