@@ -17,8 +17,8 @@ console.log(localStorage.getItem("token"));
 })
   }
   return (
-    <>
-    <div className='logo'>
+    <div className='bg'>
+ <div className='logo'>
     <img src={kh} alt='aghfjj'/>
     </div>
     <img src={ih} alt='igkdbc'/>
@@ -32,7 +32,8 @@ console.log(localStorage.getItem("token"));
           <Button type='submit' color='primary' variant='contained'>Login</Button>
         </form>
         </div>
-    </>
+    </div>
+   
   )
 
 }
