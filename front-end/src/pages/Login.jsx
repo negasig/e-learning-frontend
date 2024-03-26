@@ -1,6 +1,6 @@
 
 import ih from '../images/ngim.jpeg'
-import kh from '../images/elear.jpg'
+import nh from '../images/Ell.png'
 import { Button } from '@mui/material';
 import axios from 'axios';
 import { useState } from 'react';
@@ -19,7 +19,7 @@ console.log(localStorage.getItem("token"));
   return (
     <div className='bg'>
  <div className='logo'>
-    <img src={kh} alt='aghfjj'/>
+    <img src={nh} alt='aghfjj'/>
     </div>
     <img src={ih} alt='igkdbc'/>
         <div className='login'>

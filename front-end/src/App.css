@@ -108,7 +108,7 @@ img{
 }
 .logo img{
 
-  width: 150px;
+  width: 180px;
   margin-left: 1%;
   margin-top: 1%;
   position: relative;
@@ -116,4 +116,10 @@ img{
 a{
   color: black;
   background-color: white;
+}
+.home a{
+
+  text-align: center;
+  padding: 1%;
+  text-decoration: none;
 }
