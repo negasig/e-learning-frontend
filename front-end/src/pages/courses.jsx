@@ -1,29 +1,34 @@
 import React from 'react'
 import '../App.css'
+import im from '../images/Ell.png'
 import { Link } from 'react-router-dom'
 export default function Courses() {
   return (
     <>
-    <h1>E-Learning</h1>
-        
-    <div>Courses</div>
+    <br/>
+    <img src={im} style={{width:'12%', marginLeft:'-50%', marginTop:'-0.5%'}} alt='helo'/>
+    <div className='home'>
 
-    <div className='ng'>
-    
-    <Link to='/dashboard'>Dashboard</Link>
+    <Link to='/Home'>Home</Link>
     <Link to='/student'>Students</Link>
-    <Link to='/course'>Courses</Link>
+
+  <div className='ab'>
+  <Link to='/Maths'>Courses</Link>
+    <div className='abc'>
+      <div className='abcd'>
+        <Link to='/Maths'>Javascript</Link><br />
+        <Link to='/Maths'>English</Link><br/>
+        <Link to='/Maths'>Maths</Link><br/>
+        <Link to='/Maths'>Java</Link>
+      </div>
+    </div>
+  </div>
+
+      
+</div>
     <Link to='/department'>Departments</Link>
     <Link to='/academic'>Academic year</Link>
-    </div>
-    
-        <div className='courses'>
-        <Link to='/Maths'>Maths</Link><br/>
-        <Link to='/Maths'>English</Link><br/>
-        <Link to='/Maths'>Java</Link><br />
-        
-        <Link to='/Maths'>C#</Link>
-        </div>
+
     </>
   
   )

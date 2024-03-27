@@ -1,8 +1,6 @@
 import React from 'react'
 import im from '../images/Ell.png'
 import { Link } from 'react-router-dom'
-
-import Mar from './mar.jsx';
 export default function Home() {
   return (
     <>
@@ -17,7 +15,7 @@ export default function Home() {
     <Link to='/academic'>Academic year</Link>
     </div>
     
-     <Mar />
+    
 
     </>
 

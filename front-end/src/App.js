@@ -6,7 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Courses from './pages/courses';
 import Department from './pages/department';
 import Student from './pages/student';
-import Maths from './pages/Maths';
+import Maths from './subjects/Maths';
 import Login from './pages/Login';
 import Protectedroute from './pages/protectedRoute';
 import Register from './pages/Register';

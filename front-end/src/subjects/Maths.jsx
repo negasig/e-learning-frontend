@@ -1,19 +1,21 @@
 import React from 'react'
 import '../App.css'
+import im from '../images/Ell.png'
 import { Link } from 'react-router-dom'
 export default function Maths() {
   return (
     <>
-      <h1>E-Learning</h1>
-      <div>Maths</div>
-      <div className='ng'>
-        <Link to='/dashboard'>Dashboard</Link>
-        <Link to='/student'>Students</Link>
-        <Link to='/course'>Courses</Link>
-        <Link to='/department'>Departments</Link>
-        <Link to='/academic'>Academic year</Link>
+    <div>Home</div>
+    <img src={im} style={{width:'12%', marginLeft:'-50%', marginTop:'-0.5%'}} alt='helo'/>
+    <div className='home'>
 
-      </div>
+    <Link to='/Home'>Home</Link>
+    <Link to='/student'>Students</Link>
+    <Link to='/course'>Courses</Link>
+    <Link to='/department'>Departments</Link>
+    <Link to='/academic'>Academic year</Link>
+    </div>
+
       <p>
         Linear algebra is central to almost all areas of mathematics. For instance,
         linear algebra is fundamental in modern presentations of geometry, including for defining basic
@@ -24,9 +26,10 @@ export default function Maths() {
         systems, which cannot be modeled with linear algebra, it is often used for dealing with first-order
         approximations, using the fact that the differential of a multivariate function at a point is the
         linear map that best approximates the function near that point.
-        History
-      </p><br />
-      <p>
+        History 
+        
+     
+     
         The procedure (using counting rods) for solving simultaneous linear equations now called Gaussian
         elimination appears in the ancient Chinese mathematical text Chapter Eight: Rectangular Arrays of The
         Nine Chapters on the Mathematical Art. Its use is illustrated in eighteen problems, with two to five equations.[4]
