@@ -15,6 +15,15 @@ export default function Department() {
     <Link to='/department'>Departments</Link>
     <Link to='/academic'>Academic year</Link>
     </div>
+    <div className='top'>
+        <div className='midle'><Link to='/hg'>pen</Link></div>
+        <div className='first'>
+          <Link to='/hg'>pen</Link>
+          <Link to='/hg'>pen</Link>
+          <Link to='/hg'>pen</Link>
+        </div>
+      </div>
+    
     </>
   )
 }

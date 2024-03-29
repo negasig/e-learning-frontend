@@ -8,9 +8,10 @@ import Department from './pages/department';
 import Student from './pages/student';
 import Maths from './subjects/Maths';
 import Login from './pages/Login';
-import Protectedroute from './pages/protectedRoute';
+
 import Register from './pages/Register';
 import Home from './pages/Home';
+import Protectedroute from './pages/protectedRoute';
 
 
 
@@ -20,8 +21,9 @@ function App() {
     <Routes>
       <Route index element={<Home />}/>
       <Route path='/home' element={<Home />}/>
-      <Route element={<Protectedroute />}>
       <Route path='/login' element={<Login />}/>
+      <Route element={<Protectedroute />}>
+    
       <Route path="/dashboard" element={<Dashboard />}/>
       <Route path='/register' element={<Register />}/>
       <Route path="/department" element={<Department />}/>
@@ -29,7 +31,8 @@ function App() {
       <Route path="/academic" element={<Academicyear />}/>
       <Route path="/Maths" element={<Maths />}/>
       <Route path="/student" element={<Student />}/>
-      </Route>
+     </Route>
+      
     </Routes>
     
     </BrowserRouter>       

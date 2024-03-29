@@ -87,15 +87,15 @@ th, td {
 }
 input{
   padding: 10px;
-  width: 26%;
+  width: 20%;
   margin-bottom: 10px;
   border-radius: 10px;
   border-width: 1px;
 }
 img{
-  width: 60px;
-  margin-left: -19%;
-  margin-top: 5%;
+  width: 50px;
+  margin-left: -14%;
+  margin-top: 5.5%;
   position: absolute;
   height: 60x;
   border-radius: 20%;
@@ -135,4 +135,13 @@ font-size: 20px;
 .courses {
   margin-top: 20px;
   margin-right: 4%;;
+}
+.first a{
+  display: none;
+}
+.midle{
+  display: none;
+}
+.midle:hover .first a{
+  display: block;
 }
