@@ -1,7 +1,13 @@
 import React from 'react'
 
-export default function Guestpage() {
+export default function Guestpage(props) {
+  const logout=()=>{
+    localStorage.clear();
+  }
   return (
-    <div>Guest page</div>
+    <>
+    <div>Welcome {props.value}</div>
+    <button onClick={logout}>Logout</button>
+    </>
   )
 }

@@ -1,7 +1,18 @@
+
 import React from 'react'
 
-export default function admin() {
+
+
+export default function Admin(props) {
+  const logout=()=>{
+localStorage.clear();
+  }
   return (
-    <div>Admin</div>
+    <>
+    <div>Welcome {props.data}</div>
+    <button onClick={logout}>Logout</button>
+    </>
+    
+    
   )
 }

@@ -1,10 +1,15 @@
 import React from 'react'
 
 export default function Student(props) {
+  const logout=()=>{
+    localStorage.clear();
+  }
   return (
+    
     <>
-    <div>Student profile</div>
-    <h3>Welcome {props.value}</h3>
+    <div>Welcome {props.value}</div>
+    <button onClick={logout}>Logout</button>
+  
     </>
   )
 }
