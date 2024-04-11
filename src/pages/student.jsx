@@ -3,7 +3,7 @@ import '../App.css'
 import im from '../images/Ell.png'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-export default function Student() {
+export default function Studentt() {
   const [students, setStudents]=useState([]);
   useEffect(()=>{
   getStudents();
