@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 export default function Home() {
   return (
     <>
-    <div>Home</div>
-    <img src={im} style={{width:'12%', marginLeft:'-50%', marginTop:'-0.5%'}} alt='helo'/>
+    
+    <img src={im} style={{width:'12%', marginLeft:'-50%', marginTop:'-1%'}} alt='helo'/>
     <div className='home'>
 
     <Link to='/Home'>Home</Link>

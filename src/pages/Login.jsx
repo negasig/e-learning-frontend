@@ -6,26 +6,27 @@ import axios from 'axios';
 import {useEffect, useState } from 'react';
 import { Link} from 'react-router-dom/dist';
 import '../App.css'
-import Admin from '../roles/admin';
-import Protectedroute from './protectedRoute';
 
 
 export default function Login(props) {
-  const[username, setUsername]=useState();
-  const[password, setPassword]=useState();
-  const[user, setUser]=useState([]);
+  const[username, setUsername]=useState('');
+  const[password, setPassword]=useState('');
+
  
       const handleLogin=()=>{
         
-          axios.post("http://localhost:9009/Api/v1/loginn", {username, password}, {'content-type': 'text/json'}).then(result=>{
-            setUser(result.data);
+          axios.post("http://localhost:9009/Api/v1/login", {username, password}, {'content-type': 'text/json'}).then(result=>{
+          
+            localStorage.setItem("token", result.data)
           })
+        
         }
         useEffect(()=>{
           handleLogin();
-        },[user])
+        })
   return (
  <>
+ 
  <div className='bg'>
  <div className='logo'>
     <img src={nh} alt='aghfjj'/>
