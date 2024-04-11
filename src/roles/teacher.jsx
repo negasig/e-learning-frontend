@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-import React from 'react'
 
-export default function Teacher(props) {
-  const logout=()=>{
-    localStorage.clear();
-  }
-  return (
-    <>
-   <div>Welcome {props.value}</div>
-    <button onClick={logout}>Logout</button>
-    </>
-  )
-=======
 import {Link, useNavigate } from 'react-router-dom';
 import React, { useState } from 'react'
 import Login from '../pages/Login';
@@ -49,6 +36,4 @@ if(!isloged){
     </>
   ) 
 }
- 
->>>>>>> a6ab8acb373c7eaa6198896a2e61bfac9bf7a1f1
 }
