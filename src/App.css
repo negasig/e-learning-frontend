@@ -76,7 +76,9 @@ table, td, th {
   border: 1px solid #ddd;
   text-align: left;
 }
-
+.home{
+  padding-top: 2%;
+}
 table {
   border-collapse: collapse;
   width: 100%;
@@ -145,6 +147,12 @@ font-size: 20px;
 .midle:hover .first a{
   display: block;
 }
+<<<<<<< HEAD
 .home{
   margin-top: 2%;
+=======
+.admin{
+  background-color: white;
+
+>>>>>>> a6ab8acb373c7eaa6198896a2e61bfac9bf7a1f1
 }
