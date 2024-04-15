@@ -5,35 +5,37 @@ import Admin from '../roles/admin'
 import Guestpage from '../roles/guest'
 import Teacher from '../roles/teacher'
 
-import Student from './student'
+import Student from '../roles/student'
+import Eror from './eror'
 
 export default function Protectedroute() {
  
  const isLogedin=localStorage.getItem("token")
- 
-
-if(isLogedin==="admin"){
-  
-    return <Admin value={isLogedin} />
-    
-}
-
-else if(isLogedin==="student"){
-    return <Student value={isLogedin}/>
-}
-else if(isLogedin==="teacher"){
+ const err="Incorect username or password"
+ if(isLogedin === "teacher"){
     return <Teacher value={isLogedin} />
 }
-else if(isLogedin==="guest"){
+else if(isLogedin === "admin"){
+  
+    return <Admin value={isLogedin} />
+}
+else if(isLogedin === "student"){
+    return <Student value={isLogedin}/>
+}
+else if(isLogedin === "guest"){
     return <Guestpage value={isLogedin} />
 }
-else if(isLogedin==='false'){
+else if(isLogedin === "false"){
 
-    return <Login />
+    return <Eror dt={err}/>
+    
+   
     
 }
 else{
-    return <Login />  
+    return (
+        <Login />
+    )
 }
 
 }

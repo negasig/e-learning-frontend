@@ -9,8 +9,8 @@ export default function Admin(props) {
   const[isloged, setIsloge]=useState(true);
 const navigate=useNavigate();
 const logout=()=>{
-  setIsloge(false);
   localStorage.clear();
+  setIsloge(false);
   navigate('/login');
   }
 
@@ -21,8 +21,6 @@ if(!isloged){
   return(
     <>
     <div className='home'>
-
-<Link to='/Home'>Home</Link>
 <Link to='/student'>Students</Link>
 <Link to='/course'>Courses</Link>
 <Link to='/department'>Departments</Link>
@@ -30,7 +28,7 @@ if(!isloged){
 <button onClick={logout} style={{marginLeft:'10%', backgroundColor:'#808080', color:'white', borderRadius:'10px'}}>Logout</button>
 </div>
     <div className='admin'>
-    <div>Welcome <b>{props.value}</b></div>
+    <div style={{color:'red'}}>Welcome <b>{props.value}</b></div>
     </div>
     <Abc />
     </>

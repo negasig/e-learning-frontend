@@ -9,7 +9,7 @@ export default function Guestpage(props) {
       }
   return (
     <>
-    <div>Welcome {props.value}</div>
+    <div style={{color:'red'}}>Welcome <b>{props.value}</b></div>
     <button onClick={logout}>Logout</button>
     </>
   )
