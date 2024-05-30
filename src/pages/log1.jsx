@@ -3,24 +3,27 @@ import im from '../images/Ell.png'
 import { Button } from '@mui/material';
 import axios from 'axios';
 import '../App.css'
-import Protectedroute from './protectedRoute';
 import {useState } from 'react';
 import { Link } from 'react-router-dom';
+import Secure from './secure';
 
 
 
-export default function Login(props) {
+export default function Logone(props) {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
-
+const uu=[];
   const handleLogin = () => {
 
-    axios.post("http://localhost:9009/Api/v1/login", { username, password }, { 'content-type': 'text/json' }).then(result => {
-      localStorage.setItem("token", result.data)
+    axios.post("http://localhost:9009/Api/v1/log", { username, password }, { 'content-type': 'text/json' }).then(result => {
+      uu.push(Object.keys(result.data));
+      uu.forEach(u=>{
+        console.log(u)
+      })
     })
   }
-
-  return localStorage.getItem("token") ? <Protectedroute /> :
+  console.log(uu)
+  return uu.length===1 ? <Secure data={uu} /> :
 
     <>
       <div className='home'>

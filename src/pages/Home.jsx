@@ -1,19 +1,25 @@
 import React from 'react'
 import im from '../images/Ell.png'
+import ip from '../images/abc.jpg'
 import { Link } from 'react-router-dom'
+import Protectedroute from './protectedRoute'
 export default function Home() {
+  if(!localStorage.getItem("token")){
+    //#476CC4 
   return (
     <>
-    <img src={im} style={{width:'12%', marginLeft:'-50%', marginTop:'1%'}} alt='helo'/>
     <div className='home'>
+    <img src={im} style={{width:'8%', marginTop:'0%'}} alt='helo'/>
+  <Link to='/Home'>Home</Link>
+  <Link to='/login' >Login</Link>
+  <Link to='/Logone' >Login2</Link>
+  </div>
 
-    <Link to='/Home'>Home</Link>
-    <Link to='/login' >Login</Link>
-    </div>
-    
-    
-
-    </>
-
+  </>
   )
+}
+else{
+  return <Protectedroute />
+}
+   
 }

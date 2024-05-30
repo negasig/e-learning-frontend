@@ -2,14 +2,21 @@
 import React, { useState } from 'react'
 import {Link, useNavigate } from 'react-router-dom';
 import Login from '../pages/Login';
+import Allcours from '../subjects/allcours';
+import Java from '../subjects/java';
 export default function Student(props) {
   const[isloged, setIsloge]=useState(true);
+  const displac=()=>{
+    let pp=document.getElementById('p1');
+    pp.display='block';
+  }
   const navigate=useNavigate();
   const logout=()=>{
     localStorage.clear();
     setIsloge(false);
     navigate('/login');
     }
+
   
       
   if(!isloged){
@@ -27,6 +34,11 @@ export default function Student(props) {
       <div className='admin'>
       <div style={{color:'red'}}>Welcome <b>{props.value}</b></div>
       </div>
+      <div>
+      </div>
+     <Link to='java' style={{display:'none'}}>java{<Java />}</Link>
+     <button onClick={displac}>java</button>
+     <p id='p1' style={{display:'none'}}><Java />view course</p>
       </>
     ) 
   }
